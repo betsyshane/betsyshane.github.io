@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Bootstrap Demo</title>
+  <title>Latitude Study</title>
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.css" crossorigin="anonymous">
@@ -28,26 +28,24 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comparison </a>
+            <a class="nav-link" href="comparison.html">Comparison </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Visualizations
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Viz 1 </a>
-              <a class="dropdown-item" href="#">Viz 2 </a>
-              <a class="dropdown-item" href="#">Viz 3 </a>
-              <a class="dropdown-item" href="#">Viz 4 </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="viz1.html">Viz 1 </a>
+              <a class="dropdown-item" href="viz2.html">Viz 2 </a>
+              <a class="dropdown-item" href="viz3.html">Viz 3 </a>
+              <a class="dropdown-item" href="viz4.html">Viz 4 </a>                
             </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Data </a>
+              <a class="nav-link" href="data.html">Data </a>
             </li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -69,9 +67,6 @@
     <P>
     </P>
     <div class="row">
-      <div class="col-md-12">
-        <h1>Data Visualization - Temperature and Latitude</h1>
-      </div>
     </div>
     <!-- Placeholder Row -->
     <div class="row">
@@ -91,20 +86,39 @@
         </div>
     </div>
     <!-- Row 2 -->
+
+    <div class="col-md-12">
+      
+    </div>
     <div class="row">
       <div class="col-md-8">
-        <p>The purpose of the temperature and latitude project was to take what we've learned about Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"</p>
-     
-        <p>We built a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, we utilized a <a href="https://pypi.python.org/pypi/citipy">simple Python library</a>, the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>, and a little common sense to create a representative model of weather across world cities.
+
+        <h2>Humidity (%) vs. Latitude</h2>
+        <P></P>
+        <img src="assets/images/Fig2.png" alt="Humidity (%) vs. Latitude" class="img-fluid">
+        <p>Humidity isn't really affected by latitude.
         </p>
       </div>
       <div class="col-md-4">
-        <p>We built a series of scatter plots to showcase the following relationships:</p>
-          <li>Temperature (F) vs. Latitude</li>
-          <li>Humidity (%) vs. Latitude</li>
-          <li>Cloudiness (%) vs. Latitude</li>  
-          <li>Wind Speed (mph) vs. Latitude</li>        
-        </div>
+        <h3>Visualizations</h3>
+          <!-- <p>We built a series of scatter plots to showcase the following relationships:</p> -->
+          <div class="row">
+          <div class="col-md-6">  
+            <a href="viz1.html"><img src="assets/images/Fig1.png" alt="Temperature (F) vs. Latitude" class="img-thumbnail"></a>
+          </div>
+          <div class="col-md-6">          
+            <a href="viz2.html"><img src="assets/images/Fig2.png" alt="Humidity (%) vs. Latitude" class="img-thumbnail"></a>
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6">                      
+            <a href="viz3.html"><img src="assets/images/Fig3.png" alt="Cloudiness (%) vs. Latitude" class="img-thumbnail"></a>
+          </div>
+          <div class="col-md-6">          
+            <a href="viz4.html"><img src="assets/images/Fig4.png" alt="Wind Speed (mph) vs. Latitude" class="img-thumbnail"></a>   
+          </div>       
+          </div>
+      </div>
     </div>
 
     
